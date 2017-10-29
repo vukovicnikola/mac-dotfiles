@@ -1,1 +1,1 @@
-# mac-dotfiles Oct 2017
+# mac-dotfiles oct 2017

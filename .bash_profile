@@ -1,14 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Set up gpg-agent automatically for every shell
-if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-    source ~/.gnupg/.gpg-agent-info
-    export GPG_AGENT_INFO
-else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-fi
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
